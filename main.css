@@ -1,0 +1,191 @@
+body {
+	background-color: #FFF;
+	font-family: 'Palanquin Dark', sans-serif;
+}
+
+#mainPage {
+	
+}
+
+#background {
+	background-image: url("fruit.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 98%;
+	opacity: 0.2;
+	position: absolute;
+	width: 99%;
+	z-index: -1;
+}
+
+#name {
+	align-content: center;
+	display: flex;
+	font-size: 8em;
+	justify-content: center;
+}
+
+#c {
+    background-color: #44f;
+    color: white;
+}
+
+#description {
+	align-content: center;
+	display: flex;
+	font-size: 2em;
+	justify-content: center;
+}
+
+#inputBox {
+	align-content: center;
+	display: flex;
+	justify-content: center;
+}
+
+#inputLiner {
+	position: relative;
+}
+
+#userInput,
+#foodInputBox {
+	position: absolute;
+    border-radius: 5px;
+    font-size: 4.2em;
+    opacity: 0.4;
+    outline-width: 0;
+    position: relative;
+    text-align: center;
+    top: 5.2rem;
+    width: 25.2rem;
+}
+
+#userInput:focus {
+	opacity: 0.8;
+}
+
+#activeLevel {
+	display: none;
+	height: 5.2em;
+	justify-content: space-around;
+	margin: 0 auto;
+	width: 60em;
+}
+
+.activeOptions {
+	align-items: center;
+	background-color: #FFF;
+	border-radius: 5px;
+	display: flex;
+	font-size: 2em;
+	justify-content: center;
+	height: 5.2em;
+	opacity: 0.5;
+	width: 30%;
+
+}
+
+.activeOptions:hover {
+	color: red;
+	opacity: 0.8;
+}
+
+#navigation {
+	display: flex;
+	height: 4.4em;
+	justify-content: space-between;
+	margin: 0 auto;
+	position: relative;
+    top: 6em;
+	width: 24rem;
+}
+
+.previous,
+.next {
+	background-color: #FFF;
+	border-radius: 5px;
+	display: flex;
+	height: 4.4em;
+	opacity: 0.74;
+	position: relative;
+	width: 9.4em;
+}
+
+.previous:hover,
+.next:hover {
+	opacity: 1;
+}
+
+.previous {
+	justify-content: flex-start;
+}
+
+.next {
+	justify-content: flex-end;
+}
+
+.button {
+    font-size: 5em;
+    line-height: 0.6;
+}
+
+.buttonText {
+	font-size: 0.4em;
+	opacity: 0.6;
+}
+
+#resultsPage {
+	display: none;
+}
+
+#bmrResult {
+	align-items: center;
+	display: flex;
+	font-size: 4em;
+	justify-content: center;
+	text-align: center;
+}
+
+#foodInputLiner {
+    display: flex;
+	justify-content: center;
+    margin-top: 2em;
+}
+
+#foodSelect {
+	font-size: 2em;
+}
+
+#foodInputBox {
+    font-size: 3.2em;
+    margin-left: 1em;
+    text-align: left;
+    top: 0.2rem;
+}
+
+#foodInputBox:hover {
+	opacity: 0.72;
+}
+
+#threeMeals {
+	display: flex;
+	height: 26em;
+	justify-content: space-around;
+	width: 90%;
+	margin: 1em auto;
+}
+
+.mealOptions {
+	background-color: #FFF;
+	border-radius: 5px;
+	color: red;
+	height: 24em;
+	opacity: 0.7;
+	width: 30%;
+}
+
+.choices {
+    font-size: 1.3em;
+    height: 3.2em;
+    margin-left: 2em;
+}

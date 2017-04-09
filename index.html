@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body ng-app="hackHealth" ng-controller="hACKHealthCtrl">
+	<div id="background"></div>
+	<div id="mainPage">
+		<div id="name"><span> {{name1}}<span id="c">C</span>{{name2}} </span></div>
+		<div id="description"><span> {{description}} </span></div>
+		<div id="inputBox">
+			<div id="inputLiner">
+				<input id="userInput" type="text" placeholder={{placeHolder}}>	
+			</div>
+		</div>
+		<div id="activeLevel">
+			<div class="activeOptions" ng-click="next(); updateInput()" data=1.2><span>sedentary active</span></div>
+			<div class="activeOptions" ng-click="next(); updateInput()" data=1.55><span>moderately active</span></div>
+			<div class="activeOptions" ng-click="next(); updateInput()" data=1.9><span>extremely active</span></div>
+		</div>	
+		<div id="navigation">
+			<div class="previous" ng-click="prev(); updateInput()">
+				<div><span class="button">< <span class="buttonText"></span> </span></div>		
+			</div>
+			<div class="next" ng-click="next(); updateInput()">
+				<div><span class="button"><span class="buttonText">enter</span> ></span></div>
+			</div>
+		</div>
+	</div>
+	<div id="resultsPage">
+		<div id="bmrResult"> <span>{{user}}, your calculated BMR is: {{result | number : 2}}</span> </div>
+		<div id="foodInputLiner">
+			<span id="foodSelect">What would you like to eat?</span>
+			<input id="foodInputBox" type="text" placeholder={{mealChoice}}>
+		</div>
+		<div id="mealResult"></div>
+		<div id="threeMeals">
+			<div class="mealOptions">
+				<div class="choices"> item: {{itemName1}} </div>
+				<div class="choices"> calories: {{itemCalories1}} </div>
+				<div class="choices"> protein: {{itemProtein1}} </div>
+				<div class="choices"> sodium: {{itemSodium1}} </div>
+				<div class="choices"> sugar: {{itemSugars1}} </div>
+				<div class="choices"> fat: {{itemFat1}} </div>
+			</div>
+			<div class="mealOptions">
+				<div class="choices"> item: {{itemName2}} </div>
+				<div class="choices"> calories: {{itemCalories2}} </div>
+				<div class="choices"> protein: {{itemProtein2}} </div>
+				<div class="choices"> sodium: {{itemSodium2}} </div>
+				<div class="choices"> sugar: {{itemSugars2}} </div>
+				<div class="choices"> fat: {{itemFat2}} </div>
+			</div>
+			<div class="mealOptions">
+				<div class="choices"> item: {{itemName3}} </div>
+				<div class="choices"> calories: {{itemCalories3}} </div>
+				<div class="choices"> protein: {{itemProtein3}} </div>
+				<div class="choices"> sodium: {{itemSodium3}} </div>
+				<div class="choices"> sugar: {{itemSugars3}} </div>
+				<div class="choices"> fat: {{itemFat3}} </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
